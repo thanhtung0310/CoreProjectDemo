@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestPipelineDemo", "Requ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticFiles", "StaticFiles\StaticFiles.csproj", "{D0E8F1BE-A7FB-4ACF-B018-2502689D0090}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCCoreApp", "MVCCoreApp\MVCCoreApp.csproj", "{99456BA8-AF46-404D-ADC7-5225DCB17C1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D0E8F1BE-A7FB-4ACF-B018-2502689D0090}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0E8F1BE-A7FB-4ACF-B018-2502689D0090}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0E8F1BE-A7FB-4ACF-B018-2502689D0090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99456BA8-AF46-404D-ADC7-5225DCB17C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99456BA8-AF46-404D-ADC7-5225DCB17C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99456BA8-AF46-404D-ADC7-5225DCB17C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99456BA8-AF46-404D-ADC7-5225DCB17C1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
