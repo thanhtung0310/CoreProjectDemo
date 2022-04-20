@@ -8,9 +8,18 @@ namespace MVCCoreApp.Controllers
 {
     public class EmployeesController : Controller
     {
-        public IActionResult Index()
+        [Route("")]
+        [Route("employees/{id?}")]
+        public string GetEmployeeList(int id)
         {
-            return View();
+            return "Employee with ID " + id;
+        }
+
+        //[ActionName("staffs")]    // tương tự
+        [Route("staffs")]
+        public string GetStaffList()
+        {
+            return "Staff";
         }
     }
 }

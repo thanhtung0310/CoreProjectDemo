@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -35,14 +36,22 @@ namespace WebApplication1
             //    });
             //});
 
+            // Convention Based Routing
             app.UseMvc(routes =>
             {
-                routes.MapRoute("security", "secure", new 
-                {
-                    Controller="Admin", Action = "Index"
-                });
-                routes.MapRoute("default", "{controller}/{action=Index}/{id?}");
+                //routes.MapRoute("security", "secure", new
+                //{
+                //    Controller = "Admin",
+                //    Action = "Index"
+                //});
+                //routes.MapRoute("default", "{controller=Employees}/{action=Index}/{id?:int}");
+                routes.MapRoute("default", "{controller}/{action}/{id}", new
+                    { controller="Home", action = "Index"}, new
+                    { id = new IntRouteConstraint()});
             });
+
+            // Attribute Based Routing
+            //app.UseMvc();
 
             app.Run(async (content) =>
             {
