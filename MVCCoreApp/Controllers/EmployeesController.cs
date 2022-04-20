@@ -8,7 +8,7 @@ namespace MVCCoreApp.Controllers
 {
     public class EmployeesController : Controller
     {
-        [Route("")]
+        //[Route("")]
         [Route("employees/{id?}")]
         public string GetEmployeeList(int id)
         {
