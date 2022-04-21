@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticFiles", "StaticFiles\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCCoreApp", "MVCCoreApp\MVCCoreApp.csproj", "{99456BA8-AF46-404D-ADC7-5225DCB17C1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistinguishModel-ViewModel", "DistinguishModel-ViewModel\DistinguishModel-ViewModel.csproj", "{7692CF28-6A05-4091-8EBE-832918EC7658}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistinguishModel-ViewModel", "DistinguishModel-ViewModel\DistinguishModel-ViewModel.csproj", "{7692CF28-6A05-4091-8EBE-832918EC7658}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETCoreForm", "ASPNETCoreForm\ASPNETCoreForm.csproj", "{6D0DE264-8644-47E2-A780-6CCB4E3DC3D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNETCoreForm", "ASPNETCoreForm\ASPNETCoreForm.csproj", "{6D0DE264-8644-47E2-A780-6CCB4E3DC3D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DILifetime", "DILifetime\DILifetime.csproj", "{60A307B8-1E86-40EA-936F-CA364ACB0603}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{6D0DE264-8644-47E2-A780-6CCB4E3DC3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D0DE264-8644-47E2-A780-6CCB4E3DC3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D0DE264-8644-47E2-A780-6CCB4E3DC3D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60A307B8-1E86-40EA-936F-CA364ACB0603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A307B8-1E86-40EA-936F-CA364ACB0603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A307B8-1E86-40EA-936F-CA364ACB0603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A307B8-1E86-40EA-936F-CA364ACB0603}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
