@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace WebApplication1
+namespace DistinguishModel_ViewModel
 {
     public class Startup
     {
@@ -24,7 +27,7 @@ namespace WebApplication1
                 app.UseDeveloperExceptionPage();
             }
 
-            //app.UseMvcWithDefaultRoute();
+            app.UseMvcWithDefaultRoute();
 
             //app.UseRouting();
 
@@ -35,28 +38,6 @@ namespace WebApplication1
             //        await context.Response.WriteAsync("Hello World!");
             //    });
             //});
-
-            // Convention Based Routing
-            app.UseMvc(routes =>
-            {
-                //routes.MapRoute("security", "secure", new
-                //{
-                //    Controller = "Admin",
-                //    Action = "Index"
-                //});
-                //routes.MapRoute("default", "{controller=Employees}/{action=Index}/{id?:int}");
-                routes.MapRoute("default", "{controller}/{action}/{id}", new
-                    { controller="Employees", action = "Index"}, new
-                    { id = new IntRouteConstraint()});
-            });
-
-            // Attribute Based Routing
-            //app.UseMvc();
-
-            app.Run(async (content) =>
-            {
-                await content.Response.WriteAsync("Failed to find route");
-            });
         }
     }
 }

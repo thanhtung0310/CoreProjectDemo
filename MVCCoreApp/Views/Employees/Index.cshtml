@@ -1,5 +1,7 @@
-﻿@{
+﻿@using MVCCoreApp.Models;
+@{
     Layout = null;
+    var employee = ViewData["Employee"] as EmployeeModel;
 }
 
 <!DOCTYPE html>
@@ -11,5 +13,13 @@
 <body>
     <h2>Hello from Employee Index</h2>
     <p>Index file of Employees folder</p>
+    <h3>@ViewData["Para"]</h3>
+    <div>
+        ID: @employee.emp_id <br />
+        Name: @employee.emp_name <br />
+        DOB: @employee.emp_dob <br />
+        Position: @employee.emp_position <br />
+        Contact Number: @employee.emp_contact_number <br />
+    </div>
 </body>
 </html>

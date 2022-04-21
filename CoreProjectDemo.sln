@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationSample", "Conf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestPipelineDemo", "RequestPipelineDemo\RequestPipelineDemo.csproj", "{3895AFE4-51B3-4F69-9517-A95A812CA014}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticFiles", "StaticFiles\StaticFiles.csproj", "{D0E8F1BE-A7FB-4ACF-B018-2502689D0090}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticFiles", "StaticFiles\StaticFiles.csproj", "{D0E8F1BE-A7FB-4ACF-B018-2502689D0090}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCCoreApp", "MVCCoreApp\MVCCoreApp.csproj", "{99456BA8-AF46-404D-ADC7-5225DCB17C1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistinguishModel-ViewModel", "DistinguishModel-ViewModel\DistinguishModel-ViewModel.csproj", "{7692CF28-6A05-4091-8EBE-832918EC7658}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{99456BA8-AF46-404D-ADC7-5225DCB17C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99456BA8-AF46-404D-ADC7-5225DCB17C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99456BA8-AF46-404D-ADC7-5225DCB17C1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7692CF28-6A05-4091-8EBE-832918EC7658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7692CF28-6A05-4091-8EBE-832918EC7658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7692CF28-6A05-4091-8EBE-832918EC7658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7692CF28-6A05-4091-8EBE-832918EC7658}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

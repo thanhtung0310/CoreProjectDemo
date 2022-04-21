@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MVCCoreApp.Models
+namespace DistinguishModel_ViewModel.Models
 {
     public class ProductModel
     {
         public int id { get; set; }
-        public string Name { get; set; }
-        public string Brand { get; set; }
-        public int Price { get; set; }
+        public string name { get; set; }
+        public string brand { get; set; }
+        public int price { get; set; }
     }
 }
