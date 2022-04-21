@@ -38,7 +38,7 @@ namespace ASPNETCoreForm.Controllers
                     + " and Rating: " + model.Rating + " has been created successfully!";
             else
                 message = "Failed to create the product. Please try again!";
-            return Content(message);
+            return View(model);
         }
     }
 }

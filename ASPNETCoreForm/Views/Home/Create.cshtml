@@ -6,6 +6,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Create</title>
+    <style>
+        .field-validation-error {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <h2>Create new Product</h2>
@@ -13,12 +18,15 @@
     <form asp-controller="Home" asp-action="Create" method="post">
         <label asp-for="Name"></label>
         <input type="text" id="Name" asp-for="Name" /> <br />
+        <span asp-validation-for="Name"></span> <br />
 
         <label asp-for="Rate"></label>
         <input type="text" id="Rate" asp-for="Rate" /> <br />
+        <span asp-validation-for="Rate"></span> <br />
 
         <label asp-for="Rating"></label>
         <input type="text" id="Rating" asp-for="Rating" /> <br />
+        <span asp-validation-for="Rating"></span> <br />
 
         <input type="submit" name="submit" />
     </form>
