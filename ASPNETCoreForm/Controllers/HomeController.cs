@@ -34,8 +34,8 @@ namespace ASPNETCoreForm.Controllers
         {
             string message = string.Empty;
             if (ModelState.IsValid)
-                message = "Product" + model.Name + ". Rate: " + model.Rate 
-                    + ". Rating: " + model.Rating + " has been created successfully!";
+                message = "Product: " + model.Name + " with Rate: " + model.Rate 
+                    + " and Rating: " + model.Rating + " has been created successfully!";
             else
                 message = "Failed to create the product. Please try again!";
             return Content(message);

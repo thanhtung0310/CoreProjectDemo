@@ -1,4 +1,5 @@
 ﻿@model ASPNETCoreForm.Models.ProductEditModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
 }
 
@@ -8,15 +9,16 @@
 </head>
 <body>
     <h2>Create new Product</h2>
-    <form action="/Home/Create" method="post">
-        <label for="@Model.Name">Name</label>
-        <input type="text" id="Name" name="@Model.Name" /> <br />
 
-        <label for="@Model.Rate">Rate</label>
-        <input type="text" id="Rate" name="@Model.Rate" /> <br />
+    <form asp-controller="Home" asp-action="Create" method="post">
+        <label asp-for="Name"></label>
+        <input type="text" id="Name" asp-for="Name" /> <br />
 
-        <label for="@Model.Rating">Rating</label>
-        <input type="text" id="Rating" name="@Model.Rating" /> <br />
+        <label asp-for="Rate"></label>
+        <input type="text" id="Rate" asp-for="Rate" /> <br />
+
+        <label asp-for="Rating"></label>
+        <input type="text" id="Rating" asp-for="Rating" /> <br />
 
         <input type="submit" name="submit" />
     </form>
